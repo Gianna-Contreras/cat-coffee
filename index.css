@@ -1,0 +1,85 @@
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fallback styles */
+.fallback-error {
+    padding: 50px;
+    text-align: center;
+    background-color: #e7e7aa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fallback-error button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fffd6b;
+    color: rgb(238, 237, 197);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fallback-menu button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff6cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Loading */
+.loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Error */
+.error {
+    text-align: center;
+    padding: 50px;
+    color: #000000;
+}
+
+.error-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: rgb(250, 250, 250);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    min-height: 100vh;
+    padding: 0; /* importante */
+}

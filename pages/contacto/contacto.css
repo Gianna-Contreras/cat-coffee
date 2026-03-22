@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(#f5f3ec, #f8f0d7);
+}
+
+/* SECCIÓN */
+.contacto {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+/* BANNER */
+.banner {
+    position: relative;
+    background: linear-gradient(135deg, #f4d58d, #ffc83c);
+    border-radius: 35px;
+    padding: 80px 50px 50px 50px; /* más espacio arriba */
+    margin-bottom: 80px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* GATO ARRIBA PERO DENTRO */
+.banner-gato {
+    position: absolute;
+    top: 25px;     /* antes estaba negativo, ahora está dentro */
+    left: 50px;
+    width: 140px;
+}
+
+/* TEXTO */
+.banner h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #5c3d00;
+}
+
+.banner p {
+    margin-top: 12px;
+    color: #6b4f1d;
+    font-size: 16px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f8edc9;
+    width: 320px;
+    padding: 40px 30px;
+    border-radius: 35px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+/* IMÁGENES GRANDES */
+.card-img {
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #5c3d00;
+    font-size: 20px;
+}
+
+.card p {
+    color: #6b4f1d;
+    margin-bottom: 20px;
+}
+
+/* BOTONES */
+.card button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 35px;
+    background: linear-gradient(135deg, #f4e1b9,    #ffc83c);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card button:hover {
+    transform: scale(1.05);
+}

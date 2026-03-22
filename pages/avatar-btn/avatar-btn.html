@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi Gatito</title>
+<link rel="stylesheet" href="gatito.css">
+</head>
+
+<body>
+
+<div class="cat-container">
+
+<!-- TITULO -->
+
+<div class="title-box">
+🐾 Personaliza tu Gatito
+<p>Gana puntos y personaliza a tu gatito con ropa y accesorios adorables</p>
+</div>
+
+
+<div class="cat-layout">
+
+<!-- PANEL IZQUIERDO -->
+
+<div class="panel left">
+
+<div class="menu-btn active">🐾 Cuerpo</div>
+<div class="menu-btn">👕 Vestimenta</div>
+<div class="menu-btn">🎨 Color</div>
+<div class="menu-btn">📦 Items</div>
+
+<div class="items">
+
+<div class="item" onclick="selectItem('img/gorra-1.png',100)">
+<img src="img/gorra-1.png">
+<span>100</span>
+</div>
+
+<div class="item" onclick="selectItem('img/sapo-1.png',200)">
+<img src="img/sapo-1.png">
+<span>200</span>
+</div>
+
+<div class="item" onclick="selectItem('img/campera-1.png',150)">
+<img src="img/campera-1.png">
+<span>150</span>
+</div>
+
+<div class="item" onclick="selectItem('img/bruja-1.png',200)">
+<img src="img/bruja-1.png">
+<span>200</span>
+</div>
+
+</div>
+
+<button class="buy-btn" onclick="buyItem()">Comprar</button>
+
+</div>
+
+
+<!-- AVATAR -->
+
+<div class="cat-preview">
+
+<img id="catAvatar" src="img/gata.png">
+
+<button class="apply-btn">🐾 Aplicar</button>
+
+</div>
+
+
+<!-- PANEL DERECHO -->
+
+<div class="panel right">
+
+<h3>Tus Puntos</h3>
+
+<div class="points-box">
+<span id="points">500</span> puntos
+</div>
+
+<div class="points-list">
+
+<div class="point-item">
+<img src="img/gorra-1.png">
+<span>-100</span>
+</div>
+
+<div class="point-item">
+<img src="img/sapo-1.png">
+<span>-200</span>
+</div>
+
+<div class="point-item">
+<img src="img/campera-1.png">
+<span>-150</span>
+</div>
+
+<div class="point-item">
+<img src="img/bruja-1.png">
+<span>-75</span>
+</div>
+
+</div>
+
+<button class="buy-btn" onclick="buyItem()">Comprar</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="gatito.js"></script>
+
+</body>
+</html>

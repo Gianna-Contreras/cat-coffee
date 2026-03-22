@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #f8f4ea, #e9e1cf);
+}
+
+.config-container {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* ================= Banner ================= */
+
+.config-banner {
+    background: #ffc83c;
+    padding: 30px 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom: 80px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-pattita {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.banner-text h1 {
+    margin: 0;
+    color: #6b4c2f;
+    font-size: 28px;
+}
+
+.banner-text p {
+    margin: 8px 0 0;
+    color: #8a6a45;
+    font-size: 15px;
+}
+
+/* ================= Cards ================= */
+
+.config-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f5deaf;
+    width: 280px;
+    padding: 40px 25px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card-icon {
+    width: 80px;
+    margin-top: 20px;
+}
+
+.card h2 {
+    color: #6b4c2f;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #8a6a45;
+    font-size: 14px;
+}
+
+/* ================= Botón ================= */
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to right, #f7c948, #f4b400);
+    color: #5a3d1e;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-icon {
+    width: 16px;
+    height: auto;
+}
+
+/* ================= Gatito decorativo ================= */
+
+.cat-deco {
+    margin-top: 80px;
+}
+
+.cat-deco img {
+    width: 180px;
+}
+
+/* ================= Tema oscuro ================= */
+
+.dark-mode {
+    background: linear-gradient(to bottom, #2e2e2e, #1f1f1f);
+}
+
+.dark-mode .card {
+    background: #3a3a3a;
+}
+
+.dark-mode .config-banner {
+    background: #444;
+}
+
+.dark-mode .banner-text h1,
+.dark-mode .banner-text p,
+.dark-mode .card h2,
+.dark-mode .card p {
+    color: rgb(255, 248, 207);
+}
+
+.dark-mode .btn {
+    background: linear-gradient(to right, #888, #666);
+    color: white;
+}

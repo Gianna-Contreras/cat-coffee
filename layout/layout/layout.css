@@ -1,0 +1,67 @@
+/* LAYOUT */
+.container {
+    flex: 1;
+    display: flex;
+}
+
+/* SIDEBAR */
+aside {
+    width: 220px;
+    background-color: #f7efa8;
+    padding: 20px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    padding: 0px;
+    min-height: 300px;
+    max-height: 200px;
+}
+
+/* Menú activo */
+.menu-img-btn.active {
+    position: relative;
+}
+
+.menu-img-btn.active::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 80%;
+    background-color: #fff56b;
+    border-radius: 3px;
+}
+
+/* Botones del menú */
+.menu-img-btn {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+
+.menu-img-btn img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.menu-img-btn:hover img {
+    transform: scale(1.04);
+    filter: brightness(1.03);
+}

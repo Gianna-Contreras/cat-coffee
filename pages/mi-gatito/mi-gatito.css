@@ -1,0 +1,161 @@
+body{
+font-family:Arial;
+background:#efe6d6;
+margin:0;
+text-align:center;
+}
+
+/* CONTENEDOR */
+
+.cat-container{
+width:1200px;
+margin:auto;
+padding-top:40px;
+}
+
+/* TITULO */
+
+.title-box{
+width:800px;
+margin:auto;
+background:#ffc83c;
+padding:25px;
+border-radius:40px;
+font-size:28px;
+color:#5a4327;
+}
+
+.title-box p{
+font-size:14px;
+margin-top:6px;
+color:#6e5a3d;
+}
+
+/* LAYOUT */
+
+.cat-layout{
+display:flex;
+justify-content:center;
+gap:80px;
+margin-top:40px;
+align-items:flex-start;
+}
+
+/* PANELES */
+
+.panel{
+width:260px;
+background:#f6d98a;
+padding:20px;
+border-radius:20px;
+}
+
+/* MENU */
+
+.menu-btn{
+background:#fff3cf;
+padding:12px;
+margin-bottom:12px;
+border-radius:14px;
+cursor:pointer;
+font-size:15px;
+}
+
+.menu-btn.active{
+background: #fff3cf;;
+}
+
+/* ITEMS */
+
+.items{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:15px;
+}
+
+.item{
+background:#fff3cf;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.item img{
+width:50px;
+}
+
+.item span{
+display:block;
+font-size:13px;
+}
+
+/* BOTON */
+
+.buy-btn{
+margin-top:18px;
+padding:12px;
+width:100%;
+border:none;
+background: #ffc83c;
+border-radius:20px;
+font-size:15px;
+cursor:pointer;
+}
+
+/* PREVIEW DEL GATO */
+
+.cat-preview{
+width:360px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* IMAGEN DEL GATO (SIN MARCO) */
+
+.cat-preview img{
+width:300px;
+}
+
+/* BOTON APLICAR */
+
+.apply-btn{
+margin-top:20px;
+padding:14px 50px;
+background:#ffc83c;
+border:none;
+border-radius:25px;
+cursor:pointer;
+font-size:16px;
+}
+
+/* PUNTOS */
+
+.points-box{
+background:#fff3cf;
+padding:14px;
+border-radius:15px;
+margin-top:10px;
+font-size:18px;
+}
+
+/* LISTA DE COSTOS */
+
+.points-list{
+margin-top:20px;
+}
+
+.point-item{
+display:flex;
+align-items:center;
+justify-content:space-between;
+margin-bottom:10px;
+background:#fff3cf;
+padding:10px;
+border-radius:10px;
+}
+
+.point-item img{
+width:40px;
+}

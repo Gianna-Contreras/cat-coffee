@@ -1,0 +1,173 @@
+/* ===============================
+   CONTENEDOR GENERAL
+================================ */
+
+.tienda-container{
+    max-width: 1200px;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+
+/* ===============================
+   BANNER (IGUAL AL DISEÑO)
+================================ */
+
+.tienda-banner{
+    background: linear-gradient(180deg,#ffe7a6,#ffc83c);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 35px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.banner-gato{
+    width: 130px;
+}
+
+.banner-texto h2{
+    font-size: 26px;
+    color:#6b3f00;
+    margin-bottom:5px;
+}
+
+.banner-texto p{
+    color:#8a5a00;
+    font-size:15px;
+}
+
+
+/* ===============================
+   CATEGORÍAS
+================================ */
+
+.categorias{
+    display:flex;
+    justify-content:center;   /* ← LOS CENTRA */
+    align-items:center;
+    gap:15px;
+    margin:30px 0 35px 0;
+}
+
+.categoria{
+    background:#fff4cc;
+    border:none;
+    padding:10px 20px;
+    border-radius:25px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+    box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+
+.categoria:hover{
+    transform:translateY(-2px);
+}
+
+.categoria.active{
+    background:#fcebba;
+}
+
+
+/* ===============================
+   GRID PRODUCTOS
+================================ */
+
+.productos-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+
+/* ===============================
+   CARD PRODUCTO (ESTILO EXACTO)
+================================ */
+
+.producto-card{
+    background:#fff6db; 
+    margin-bottom: 5px;
+    border-radius:22px;
+    padding:25px 20px;
+    text-align:center;
+    box-shadow:
+        0 8px 18px rgba(0,0,0,0.06),
+        inset 0 1px 0 rgba(255,255,255,0.7);
+    transition:.25s;
+}
+
+.producto-card:hover{
+    transform:translateY(-6px);
+}
+
+.producto-card img{
+    width:130px;
+    height:130px;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+.producto-card h3{
+    font-size:18px;
+    margin-top:-20px;
+}
+
+.precio{
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+
+/* BOTÓN */
+
+.btn-comprar{
+    background:linear-gradient(180deg,#ffd86b,#ffc83c);
+    border:none;
+    padding:8px 22px;
+    border-radius:20px;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:0 3px 6px rgba(0,0,0,0.15);
+    transition:.2s;
+}
+
+.btn-comprar:hover{
+    transform:scale(1.05);
+}
+
+
+/* ===============================
+   PRODUCTO DESTACADO
+================================ */
+
+.producto-destacado{
+    margin-top:20px;
+    background:linear-gradient(180deg,#ffe7a6,#f6d98a);
+    border-radius:25px;
+    padding:30px 35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.producto-destacado img{
+    width:170px;
+}
+
+.producto-destacado h3{
+    margin-bottom:8px;
+}
+
+.btn-destacado{
+    margin-top:10px;
+    background:linear-gradient(180deg,#ffd86b,#ffc83c);
+    border:none;
+    padding:10px 25px;
+    border-radius:22px;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:0 3px 6px rgba(0,0,0,0.15);
+}
