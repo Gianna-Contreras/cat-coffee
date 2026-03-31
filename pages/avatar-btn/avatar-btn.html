@@ -1,117 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Mi Gatito</title>
-<link rel="stylesheet" href="gatito.css">
-</head>
+<div class="perfil-container">
+  <div class="perfil-card">
 
-<body>
+    <div class="perfil-header">
+      <img src="img/coco-1.png" class="coco-1-header">
+      <h2>🐾 Editar Perfil</h2>
+    </div>
 
-<div class="cat-container">
+    <div class="perfil-content">
 
-<!-- TITULO -->
+      <div class="avatar-section">
+        <img src="img/avatar.png" class="avatar-img" id="avatarPreview">
+        <button class="btn-foto" id="btnCambiarFoto">📷 Cambiar foto</button>
+        <input type="file" id="inputFoto" hidden>
+      </div>
 
-<div class="title-box">
-🐾 Personaliza tu Gatito
-<p>Gana puntos y personaliza a tu gatito con ropa y accesorios adorables</p>
+      <div class="form-section">
+
+        <label>Nombre</label>
+        <input type="text" placeholder="Señor-bigotes">
+
+        <label>Correo Electrónico</label>
+        <input type="email" placeholder="señor-bigotes666@gmail.com">
+
+        <div class="row">
+          <div class="col">
+            <label>Usuario</label>
+            <input type="text" placeholder="Señor-bigotes">
+          </div>
+
+          <div class="col">
+            <label>Contraseña</label>
+            <div class="password-box">
+              <input type="password" id="password">
+              <span id="togglePass">👁</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="acciones">
+          <button class="btn-cancelar">Cancelar</button>
+          <button class="btn-guardar">Guardar</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 </div>
-
-
-<div class="cat-layout">
-
-<!-- PANEL IZQUIERDO -->
-
-<div class="panel left">
-
-<div class="menu-btn active">🐾 Cuerpo</div>
-<div class="menu-btn">👕 Vestimenta</div>
-<div class="menu-btn">🎨 Color</div>
-<div class="menu-btn">📦 Items</div>
-
-<div class="items">
-
-<div class="item" onclick="selectItem('img/gorra-1.png',100)">
-<img src="img/gorra-1.png">
-<span>100</span>
-</div>
-
-<div class="item" onclick="selectItem('img/sapo-1.png',200)">
-<img src="img/sapo-1.png">
-<span>200</span>
-</div>
-
-<div class="item" onclick="selectItem('img/campera-1.png',150)">
-<img src="img/campera-1.png">
-<span>150</span>
-</div>
-
-<div class="item" onclick="selectItem('img/bruja-1.png',200)">
-<img src="img/bruja-1.png">
-<span>200</span>
-</div>
-
-</div>
-
-<button class="buy-btn" onclick="buyItem()">Comprar</button>
-
-</div>
-
-
-<!-- AVATAR -->
-
-<div class="cat-preview">
-
-<img id="catAvatar" src="img/gata.png">
-
-<button class="apply-btn">🐾 Aplicar</button>
-
-</div>
-
-
-<!-- PANEL DERECHO -->
-
-<div class="panel right">
-
-<h3>Tus Puntos</h3>
-
-<div class="points-box">
-<span id="points">500</span> puntos
-</div>
-
-<div class="points-list">
-
-<div class="point-item">
-<img src="img/gorra-1.png">
-<span>-100</span>
-</div>
-
-<div class="point-item">
-<img src="img/sapo-1.png">
-<span>-200</span>
-</div>
-
-<div class="point-item">
-<img src="img/campera-1.png">
-<span>-150</span>
-</div>
-
-<div class="point-item">
-<img src="img/bruja-1.png">
-<span>-75</span>
-</div>
-
-</div>
-
-<button class="buy-btn" onclick="buyItem()">Comprar</button>
-
-</div>
-
-</div>
-
-</div>
-
-<script src="gatito.js"></script>
-
-</body>
-</html>

@@ -1,32 +1,27 @@
-let points = 500
-let selectedPrice = 0
-let selectedItem = null
+// Cambiar foto
+const btnFoto = document.getElementById("btnCambiarFoto");
+const inputFoto = document.getElementById("inputFoto");
+const avatar = document.getElementById("avatarPreview");
 
-function selectItem(img,price){
+btnFoto.addEventListener("click", () => {
+  inputFoto.click();
+});
 
-selectedItem = img
-selectedPrice = price
+inputFoto.addEventListener("change", () => {
+  const file = inputFoto.files[0];
+  if (file) {
+    avatar.src = URL.createObjectURL(file);
+  }
+});
 
-}
+// Mostrar/ocultar contraseña
+const togglePass = document.getElementById("togglePass");
+const password = document.getElementById("password");
 
-function buyItem(){
-
-if(selectedItem == null) return
-
-if(points >= selectedPrice){
-
-points -= selectedPrice
-
-document.getElementById("points").innerText = points
-
-document.getElementById("catAvatar").src = selectedItem
-
-}
-
-else{
-
-alert("No tienes suficientes puntos")
-
-}
-
-}
+togglePass.addEventListener("click", () => {
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
+  }
+});
