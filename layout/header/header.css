@@ -1,5 +1,4 @@
-/* HEADER */
-
+/* HEADER PRINCIPAL */
 #header-container {
     background-color: #fef283;
     padding: 10px 20px;
@@ -9,24 +8,27 @@
     align-items: center;
 }
 
-/* IZQUIERDA */
+/* ===== LADO IZQUIERDO ===== */
 .header-left {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .header-icon {
     width: 50px;
+    height: auto;
 }
-
-/* BOTON GATO */
-.header-gato-btn img {
-    width: 100px;
+.gatito-icon {
+    width: 120px !important;         /* ← Tamaño más pequeño */
+    height: auto !important;        /* ← Mantiene proporción original */
+    /* ELIMINA object-fit: cover */
+    /* ELIMINA border-radius: 50% */
     cursor: pointer;
+    transition: transform 0.2s;
+    display: block;                /* ← Evita espacios extra */
 }
-
-/* CENTRO */
+/* ===== CENTRO ===== */
 .header-center {
     display: flex;
     justify-content: center;
@@ -39,24 +41,29 @@
     object-fit: contain;
 }
 
-/* DERECHA */
+/* ===== LADO DERECHO (AVATAR) ===== */
 .header-right {
     display: flex;
     align-items: center;
 }
 
-/* AVATAR */
-.header-avatar {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid #f3d87a;
-    cursor: pointer;
+.avatar-btn {
+    display: inline-block;
+    text-decoration: none;
 }
 
-.header-avatar img {
-    width: 100%;
-    height: 100%;
+/* ESTE ES EL ESTILO CORRECTO PARA TU AVATAR */
+.header-avatar {
+    width: 65px;      /* ← CAMBIA ESTE VALOR para hacerlo más pequeño (ej: 50px, 50px) */
+    height: 65px;     /* ← CAMBIA ESTE VALOR para hacerlo más pequeño */
+    border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #f3d87a;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.header-avatar:hover {
+    transform: scale(1.05);
+    border-color: #e6c95c;
 }

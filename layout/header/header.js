@@ -1,14 +1,11 @@
-function initHeader() {
-    const links = document.querySelectorAll('[data-page]');
-    
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const page = link.dataset.page;
-
-            if (page && window.appRouter) {
-                window.appRouter.navigateTo(page);
-            }
-        });
+// Para manejar el clic del avatar
+document.querySelectorAll('.avatar-btn, .menu-img-btn').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const page = this.getAttribute('data-page');
+        if (page) {
+            // Aquí va tu lógica para cambiar de página
+            console.log('Navegar a:', page);
+        }
     });
-}
+});
